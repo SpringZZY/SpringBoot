@@ -5,20 +5,22 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
 @EnableAutoConfiguration
-public class a {
+public class controller {
 
-    @RequestMapping("/zzy")
-    public String login(){
-        System.out.println("!!!!!!!!!!!!!!!!!!");
-        return "Hello 局萌萌！";
+    public controller() {
+        // TODO Auto-generated constructor stub
     }
     
+    @RequestMapping("/SpringBoot")
+    public String loginjsp(){
+        return "Hello Spring Boot!";
+        
+    }
+
     
-//    public static void main(String[] args) throws Exception {
-//        SpringApplication.run(a.class, args);
-//    }
-    
+    public static void main(String[] args) {
+        SpringApplication.run(controller.class, args);
+    }
 }
