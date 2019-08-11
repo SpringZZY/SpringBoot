@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableAutoConfiguration
 @SpringBootApplication
-@ComponentScan("come.zzy.springboot.server")
+@ComponentScan("com.data.main.controller")
 public class Application extends SpringBootServletInitializer {
 
     /***
